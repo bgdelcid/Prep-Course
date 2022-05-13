@@ -5,12 +5,24 @@ function obtenerMayor(x, y) {
   // Devuelve el número más grande
   // Si son iguales, devuelve cualquiera de los dos
   // Tu código:
+  if (x > y){
+    return x;
+  } else if (x===y){
+    return x;
+  } else {
+    return y;
+  }
 }
 
 function mayoriaDeEdad(edad) {
   //Determinar si la persona según su edad puede ingresar a un evento.
   //Si tiene 18 años ó más, devolver --> "Allowed"
   //Si es menor, devolver --> "Not allowed"
+  if(edad >= 18){
+    return "Allowed";
+  } else {
+    return "Not allowed";
+  }
 }
   
 function conection(status) {
@@ -28,6 +40,7 @@ function saludo(idioma) {
   // Si "idioma" es "ingles", devuelve "Hello!"
   // Si "idioma" no es ninguno de los anteiores o es `undefined` devuelve "Hola!"
   // Tu código:
+
 }
 
 function colors(color) {
@@ -44,6 +57,11 @@ function esDiezOCinco(numero) {
   // Devuelve "true" si "numero" es 10 o 5
   // De lo contrario, devuelve "false"
   // Tu código:
+  if (numero === 5 || numero === 10){
+    return true;
+  } else {
+    return false;
+  }
 }
 
 function estaEnRango(numero) {
