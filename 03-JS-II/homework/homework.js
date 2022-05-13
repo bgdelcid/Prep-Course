@@ -31,6 +31,16 @@ function conection(status) {
   //Cuando el estado es igual a 2, el usuario está "Away"
   //De lo contrario, presumimos que el usuario está "Offline"
   //Devolver el estado de conexión de usuario en cada uno de los casos.
+  switch(status){
+    case 1:
+      return "Online";
+      break;
+    case 2:
+      return "Away";
+      break;
+    default:
+      return "Offline";
+  }
 }
 
 function saludo(idioma) {
@@ -40,6 +50,20 @@ function saludo(idioma) {
   // Si "idioma" es "ingles", devuelve "Hello!"
   // Si "idioma" no es ninguno de los anteiores o es `undefined` devuelve "Hola!"
   // Tu código:
+  switch (idioma) {
+    case 'aleman':
+      return "Guten Tag!"
+      break;
+    case 'mandarin':
+      return "Ni Hao!"
+      break;
+    case 'ingles':
+      return "Hello!"
+      break;
+    default:
+      return "Hola!"
+      break;
+  }
 
 }
 
@@ -51,6 +75,23 @@ function colors(color) {
   //En caso que el color recibido sea "orange", devuleve --> "This is orange"
   //Caso default: devuelve --> "Color not found"
   //Usar el statement Switch.
+  switch (color) {
+    case 'blue':
+      return "This is blue";
+      break;
+    case 'red':
+      return "This is red";
+      break;
+    case 'green':
+      return "This is green";
+      break;
+    case 'orange':
+      return "This is orange";
+      break;
+    default:
+      return "Color not found";
+      break;
+  }
 }
 
 function esDiezOCinco(numero) {
@@ -148,12 +189,6 @@ function tablaDelSeis(){
 function tieneTresDigitos(numero){
   //Leer un número entero y retornar true si tiene 3 dígitos. Caso contrario, retorna false.
   //Escribe tu código aquí
-  var num = numero.toString();
-  if(num.length() == 3 ){
-    return true;
-  } else {
-    return false;
-  }
   
 }
 
