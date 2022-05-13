@@ -68,6 +68,11 @@ function estaEnRango(numero) {
   // Devuelve "true" si "numero" es menor que 50 y mayor que 20
   // De lo contrario, devuelve "false"
   // Tu código:
+  if(numero > 20 && numero < 50){
+    return true;
+  } else {
+    return false;
+  }
 }
 
 function esEntero(numero) {
@@ -85,6 +90,15 @@ function fizzBuzz(numero) {
   // Si "numero" es divisible entre 5, devuelve "buzz"
   // Si "numero" es divisible entre 3 y 5 (ambos), devuelve "fizzbuzz"
   // De lo contrario, devuelve el numero
+  if ((numero % 3 == 0) && (numero % 5 == 0)){
+    return "fizzbuzz";
+  } else if (numero % 5 == 0){
+    return "buzz";
+  } else if (numero % 3 == 0){
+    return "fizz";
+  } else {
+    return numero;
+  }
 }
 
 function operadoresLogicos(num1, num2, num3) {
@@ -102,13 +116,26 @@ function esPrimo(numero) {
   // Pista: un número primo solo es divisible por sí mismo y por 1
   // Pista 2: Puedes resolverlo usando un bucle `for`
   // Nota: Los números 0 y 1 NO son considerados números primos
+  for (let i = 2; i = numero; i++){
+    if (numero % i == 0){
+      if (numero == i){
+        return true;
+      } 
+    } else {
+      return "falso";
+    }
+  }
 }
 
 function esVerdadero(valor){
   //Escribe una función que reciba un valor booleano y retorne “Soy verdadero” 
   //si su valor es true y “Soy falso” si su valor es false.
   //Escribe tu código aquí
-
+  if (valor === true){
+    return "Soy verdadero";
+  } else{
+    return "Soy falso";
+  }
 }
 
 function tablaDelSeis(){
@@ -121,6 +148,12 @@ function tablaDelSeis(){
 function tieneTresDigitos(numero){
   //Leer un número entero y retornar true si tiene 3 dígitos. Caso contrario, retorna false.
   //Escribe tu código aquí
+  var num = numero.toString();
+  if(num.length() == 3 ){
+    return true;
+  } else {
+    return false;
+  }
   
 }
 
